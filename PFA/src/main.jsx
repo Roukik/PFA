@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
-import ConnexionP from '../Plaquiste/ConnexionP.jsx';
+import ConnexionP from "../Plaquiste/pagesPlaquiste/ConnexionP"
+
 
 
 const router = createBrowserRouter([
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ConnexionP></ConnexionP> 
+    <ConnexionP></ConnexionP>
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
