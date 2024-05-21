@@ -59,18 +59,29 @@ export default function SignInSide() {
           <Box
             sx={{
               my: 8,
-              mx: 4,
+              mx: 6,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+            <Avatar sx={{ m: 1, bgcolor: '#525FE1' }}>
               <LockOutlinedIcon />
             </Avatar>
-            <Typography component="h1" variant="h5">
-              Sign in
+            <Typography component="h1" variant="h7">
+              Connectez vous à BuildCheck.
             </Typography>
+            <Grid container>
+                <Grid item xs>
+                  <Typography>
+                  Vous n'avez pas de compte ?
+                  </Typography>
+                  <Link href="#" variant="body2">
+                   Inscrivez-vous.
+                  </Link>
+                </Grid>
+
+              </Grid>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
                 margin="normal"
@@ -92,30 +103,15 @@ export default function SignInSide() {
                 id="password"
                 autoComplete="current-password"
               />
-              <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
-              />
               <Button
                 type="submit"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 8, mb: 3, bgcolor: '#525FE1' }} 
               >
-                Sign In
+                Connexion
               </Button>
-              <Grid container>
-                <Grid item xs>
-                  <Link href="#" variant="body2">
-                    Forgot password?
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link href="#" variant="body2">
-                    {"Don't have an account? Sign Up"}
-                  </Link>
-                </Grid>
-              </Grid>
+
               <ConnexionP sx={{ mt: 5 }} />
             </Box>
           </Box>
