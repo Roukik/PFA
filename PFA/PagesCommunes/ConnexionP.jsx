@@ -65,7 +65,7 @@ export default function SignInSide() {
               alignItems: 'center',
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: '#525FE1' }}>
+            <Avatar sx={{ m: 1, bgcolor: '#525FE1' , marginTop:'460px'}}>
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h7">
