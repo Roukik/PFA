@@ -1,4 +1,5 @@
-import { Outlet } from "react-router-dom";
+{/*
+import { createRoot } from 'react-dom/client';
 
 
 export default function MainLayout() {
@@ -6,3 +7,4 @@ export default function MainLayout() {
      
     </>
 } 
+*/}
