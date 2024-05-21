@@ -17,7 +17,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
-    <Route path="/popup" element={<Popup />} />
+    <Route path="/ConnexionP" element={<ConnexionP />} />
     <Routes>
 
     <Route path="/" element={<MainLayout />}>
