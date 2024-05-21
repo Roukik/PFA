@@ -53,6 +53,7 @@ export default function SignInSide() {
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+            backgroundColor: '#E7ECF5',
           }}
         />
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
@@ -65,7 +66,7 @@ export default function SignInSide() {
               alignItems: 'center',
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: '#525FE1' }}>
+            <Avatar sx={{ m: 1, bgcolor: '#525FE1' , marginTop:'460px'}}>
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
