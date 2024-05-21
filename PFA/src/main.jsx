@@ -1,8 +1,8 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
 import './index.css'
-import {createBrowserRouter, RouterProvider,} from "react-router-dom";
-import MainLayout from '../layouts/MainLayout';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainLayout from './layouts/MainLayoul';
 import ConnexionP from "../PagesCommunes/ConnexionP"
 
 
