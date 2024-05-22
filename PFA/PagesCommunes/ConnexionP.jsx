@@ -75,7 +75,7 @@ export default function SignInSide() {
             <Avatar sx={{ m: 1, bgcolor: '#525FE1' , marginTop:'460px'}}>
               <LockOutlinedIcon />
             </Avatar>
-            <Typography component="h1" variant="h7">
+            <Typography component="h1" variant="h5">
               Connectez vous à BuildCheck.
             </Typography>
             <Grid container>
