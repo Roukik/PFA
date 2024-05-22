@@ -8,6 +8,7 @@ import ConnexionP from "../PagesCommunes/ConnexionP"
 
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ConnexionP></ConnexionP>
+    
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
