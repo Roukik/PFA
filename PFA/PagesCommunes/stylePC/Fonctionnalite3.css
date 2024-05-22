@@ -1,7 +1,7 @@
-.bas1{
+.bas3{
     display: flex;
-    background-color: #525FE1;
-    opacity: 0.62 ;
+    background-color: #D296D4;
+    opacity: 0.57 ;
     width: 1000px;
     height: 575px;
     border-radius: 10px;
@@ -9,7 +9,7 @@
 }
 
 
-.haut1 {
+.haut3 {
     display: flex;
     justify-content: center
 }

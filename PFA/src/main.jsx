@@ -4,6 +4,8 @@ import './index.css';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import ConnexionP from "../PagesCommunes/ConnexionP";
 import Fonctionnalite1 from "../PagesCommunes/Fonctionnalite1.jsx";
+import Fonctionnalite2 from "../PagesCommunes/Fonctionnalite2.jsx";
+import Fonctionnalite3 from "../PagesCommunes/Fonctionnalite3.jsx";
 
 const App = () => (
   <BrowserRouter>
@@ -11,6 +13,8 @@ const App = () => (
       <Route path="/" element={<Navigate to="/connexion" />} />
       <Route path="/connexion" element={<ConnexionP />} />
       <Route path="/fonctionnalite1" element={<Fonctionnalite1 />} />
+      <Route path="/fonctionnalite2" element={<Fonctionnalite2 />} />
+      <Route path="/fonctionnalite3" element={<Fonctionnalite3 />} />
     </Routes>
   </BrowserRouter>
 );
