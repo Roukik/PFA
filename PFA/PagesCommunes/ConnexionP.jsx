@@ -5,7 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
+import Link from '@mui/material/Link'; 
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -13,6 +13,9 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import image1 from '../PagesCommunes/ImagePC/image1.svg'
+import { Link as RouterLink } from 'react-router-dom'; 
+import Fonctionnalite1 from './Fonctionnalite1';
+
 
 function ConnexionP() {
   return (
@@ -110,6 +113,7 @@ export default function SignInSide() {
                 id="password"
                 autoComplete="current-password"
               />
+              <RouterLink to="/Fonctionnalite1"> 
               <Button
                 type="submit"
                 fullWidth
@@ -118,6 +122,7 @@ export default function SignInSide() {
               >
                 Connexion
               </Button>
+              </RouterLink>
 
               <ConnexionP sx={{ mt: 5 }} />
             </Box>
