@@ -1,14 +1,9 @@
-import React, { useState } from 'react';
-
+import React from 'react'
 
 function Fonctionnalite1() {
-
-    return (
-        <div className='AjoutContenu'>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eos, harum reiciendis adipisci excepturi, molestias maiores laboriosam deleniti nobis, voluptatum perspiciatis? Rerum aut sunt et dicta voluptas reiciendis consectetur expedita!</p>
-        </div>
-    );
+  return (
+    <div>Fonctionnalite1</div>
+  )
 }
 
-export default Fonctionnalite1;
-
+export default Fonctionnalite1
