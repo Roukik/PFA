@@ -12,6 +12,7 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import image1 from '../PagesCommunes/ImagePC/image1.svg'
 
 function ConnexionP() {
   return (
@@ -42,6 +43,9 @@ export default function SignInSide() {
     <ThemeProvider theme={defaultTheme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
+        <div className='gauche'>
+            <img src={image1} alt="" className="image" />
+         </div>
         <Grid
           item
           xs={false}
@@ -53,9 +57,11 @@ export default function SignInSide() {
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            backgroundColor: '#E7ECF5',
+            backgroundColor:'#E7ECF5',
+            
           }}
         />
+
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
             sx={{
