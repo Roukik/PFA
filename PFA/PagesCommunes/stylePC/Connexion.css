@@ -1,0 +1,35 @@
+.MainContainer{
+    background-color: aliceblue;
+    position: fixed;
+}
+
+.prtgauche{
+    position: fixed;
+}
+
+.prtdroite{
+    position: fixed;
+    left: 41vh;
+    
+}
+
+
+
+.gauche{
+    position: relative;
+    top: 650px;
+    right: 50px;
+}
+
+
+.image{
+    width: 618px;
+    height: 582px;
+    
+}
+
+.Logo{
+    position: fixed;
+    left: 170px;
+    top: 200px;
+}
