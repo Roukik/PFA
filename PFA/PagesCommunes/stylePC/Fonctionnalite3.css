@@ -2,9 +2,13 @@
     display: flex;
     background-color: #D296D4;
     opacity: 0.57 ;
-    width: 1000px;
-    height: 575px;
-    border-radius: 10px;
+    position: fixed;
+    width: 75vh;
+    height: 52vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    left: 0px;
+    
     
 }
 
@@ -26,7 +30,7 @@
 .btnStart{
     width: 310px;
     height: 79px;
-    background-color: #525FE1;
+    background-color: #525ee1;
     color: #ffffff;
     border-radius: 15px;
     border: none;
@@ -34,4 +38,5 @@
     left: 45vh;
     bottom: 20vh;
     font-size: 26px;
+    
 }
