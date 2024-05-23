@@ -1,6 +1,7 @@
 import React from 'react'
 import '../PagesCommunes/stylePC/Fonctionnalite3.css'
 import image4 from '../PagesCommunes/ImagePC/image4.svg'
+import { Link } from 'react-router-dom'
 
 function Fonctionnalite3() {
   return (
@@ -15,7 +16,11 @@ function Fonctionnalite3() {
           <div className='contenu'>
           <h1>Plan 2D </h1>
           <p>Décryptez et analysez efficacement les composants ainsi que la disposition de chaque pièce et élément à l’aide de notre plan 2D.</p>
+      
+          <button className='btnStart'>Commencer</button>
+        
           </div>
+
       </div>
 
     </div>
@@ -23,3 +28,4 @@ function Fonctionnalite3() {
 }
 
 export default Fonctionnalite3
+
