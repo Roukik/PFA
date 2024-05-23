@@ -14,8 +14,7 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import image1 from '../PagesCommunes/ImagePC/image1.svg'
 import { Link as RouterLink } from 'react-router-dom'; 
-import '../PagesCommunes/stylePC/Connexion.css';
-import Logo from '../PagesCommunes/ImagePC/Logo.svg'
+import Fonctionnalite1 from './Fonctionnalite1';
 
 
 function ConnexionP() {
@@ -45,13 +44,12 @@ export default function SignInSide() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Grid container component="main" sx={{ height: '100vh' }} className='MainContainer'>
+      <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
         <div className='gauche'>
-           <img src={Logo} alt="" className='Logo' />
             <img src={image1} alt="" className="image" />
          </div>
-        <Grid className='prtgauche'
+        <Grid
           item
           xs={false}
           sm={4}
@@ -67,15 +65,14 @@ export default function SignInSide() {
           }}
         />
 
-        <Grid item xs={12} sm={8} md={5.5} component={Paper} elevation={6} square className='prtdroite'  >
+        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
             sx={{
-              my: 30,
+              my: 8,
               mx: 6,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-             
             }}
           >
             <Avatar sx={{ m: 1, bgcolor: '#525FE1' , marginTop:'460px'}}>
