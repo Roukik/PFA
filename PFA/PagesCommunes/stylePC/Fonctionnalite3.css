@@ -22,3 +22,16 @@
     justify-content: center;
 
   }
+
+.btnStart{
+    width: 310px;
+    height: 79px;
+    background-color: #525FE1;
+    color: #ffffff;
+    border-radius: 15px;
+    border: none;
+    position: fixed;
+    left: 45vh;
+    bottom: 20vh;
+    font-size: 26px;
+}
