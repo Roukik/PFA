@@ -18,9 +18,10 @@ const App = () => (
       <Route path="fonctionnalite1" element={<Fonctionnalite1 />} />
       <Route path="fonctionnalite2" element={<Fonctionnalite2 />} />
       <Route path="fonctionnalite3" element={<Fonctionnalite3 />} />
+      <Route path="meschantiercc" element={<MesChantierCC/>} />
       <Route path="/app" element={<Layout />}>
         <Route path="maincontent" element={<MainContent />} />
-        <Route path="meschantiercc" element={<MesChantierCC/>} />
+
       </Route>
     </Routes>
   </BrowserRouter>
