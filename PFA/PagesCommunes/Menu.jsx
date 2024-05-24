@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import { List, ListItem, ListItemIcon, ListItemText, Collapse, Divider } from '@mui/material';
-import { Dashboard, Build, Folder, Chat, Settings, ExpandLess, ExpandMore } from '@mui/icons-material';
+import {
+  DashboardOutlined,
+  BuildOutlined,
+  FolderOutlined,
+  ChatOutlined,
+  SettingsOutlined,
+  ExpandLess,
+  ExpandMore
+} from '@mui/icons-material';
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -25,31 +33,31 @@ const Menu = () => {
           <List component="div" disablePadding>
             <ListItem button>
               <ListItemIcon>
-                <Dashboard />
+                <DashboardOutlined />
               </ListItemIcon>
               <ListItemText primary="Dashboard" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
-                <Build />
+                <BuildOutlined />
               </ListItemIcon>
               <ListItemText primary="Chantiers" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
-                <Folder />
+                <FolderOutlined />
               </ListItemIcon>
               <ListItemText primary="Médiathèque" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
-                <Chat />
+                <ChatOutlined />
               </ListItemIcon>
               <ListItemText primary="Chat" />
             </ListItem>
             <ListItem button>
               <ListItemIcon>
-                <Settings />
+                <SettingsOutlined />
               </ListItemIcon>
               <ListItemText primary="Réglages" />
             </ListItem>
