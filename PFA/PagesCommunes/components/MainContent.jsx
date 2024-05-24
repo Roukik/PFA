@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Button, Grid, Card, CardContent, CardActions, TextField } from '@mui/material';
+import { Typography, Button, Grid, Card, CardContent, CardActions, TextField, CardMedia } from '@mui/material';
 import { styled } from '@mui/system';
 
 const Content = styled('div')({
@@ -41,6 +41,11 @@ const MainContent = () => {
         {[1, 2, 3].map((item, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <StyledCard>
+            <CardMedia
+              sx={{ height: 140 }}
+              image="/static/images/cards/contemplative-reptile.jpg"
+              title="green iguana"
+              />
               <CardContent>
                 <Typography variant="h6">Chantiers x</Typography>
                 <Typography variant="body2">Lorem ipsum lorem</Typography>
