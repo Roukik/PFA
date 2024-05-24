@@ -8,6 +8,7 @@ import Fonctionnalite2 from '../PagesCommunes/Fonctionnalite2.jsx';
 import Fonctionnalite3 from '../PagesCommunes/Fonctionnalite3.jsx';
 import MainContent from '../PagesCommunes/components/MainContent.jsx';
 import Layout from '../PagesCommunes/layouts/Layout.jsx'; 
+import MesChantierCC from '../ChefChantier/Pages/MesChantierCC.jsx';
 
 const App = () => (
   <BrowserRouter>
@@ -19,6 +20,7 @@ const App = () => (
       <Route path="fonctionnalite3" element={<Fonctionnalite3 />} />
       <Route path="/app" element={<Layout />}>
         <Route path="maincontent" element={<MainContent />} />
+        <Route path="meschantiercc" element={<MesChantierCC/>} />
       </Route>
     </Routes>
   </BrowserRouter>
