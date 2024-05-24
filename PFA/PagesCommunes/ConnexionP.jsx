@@ -47,7 +47,7 @@ export default function SignInSide() {
       <Grid container component="main" sx={{ height: '100vh' }}>
         <CssBaseline />
         <div className='gauche'>
-            <img src={image1} alt="" className="image" />
+            <img src={image1} alt="" className="img1" />
          </div>
         <Grid
           item
