@@ -1,78 +1,90 @@
-// PagesCommunes/Menu.jsx
-import React from 'react';
-import { List, ListItem, ListItemIcon, ListItemText, Collapse } from '@mui/material';
-import { ExpandLess, ExpandMore, Dashboard, Folder, Chat, Settings } from '@mui/icons-material';
-import { styled } from '@mui/system';
-import { Link } from 'react-router-dom';
-
-const StyledLink = styled(Link)({
-  textDecoration: 'none',
-  color: 'inherit',
-});
+import React, { useState } from 'react';
+import { List, ListItem, ListItemIcon, ListItemText, Collapse, Divider } from '@mui/material';
+import {
+  DashboardOutlined,
+  BuildOutlined,
+  FolderOutlined,
+  ChatOutlined,
+  SettingsOutlined,
+  ExpandLess,
+  ExpandMore
+} from '@mui/icons-material';
 
 const Menu = () => {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = useState(false);
+  const [sharedOpen, setSharedOpen] = useState(false);
 
   const handleClick = () => {
     setOpen(!open);
   };
 
+  const handleSharedClick = () => {
+    setSharedOpen(!sharedOpen);
+  };
+
   return (
-    <div>
+    <div style={{ width: 320 }}>
       <List>
-        <StyledLink to="/app/maincontent">
-          <ListItem button>
-            <ListItemIcon>
-              <Dashboard />
-            </ListItemIcon>
-            <ListItemText primary="Dashboard" />
-          </ListItem>
-        </StyledLink>
         <ListItem button onClick={handleClick}>
-          <ListItemIcon>
-            <Folder />
-          </ListItemIcon>
-          <ListItemText primary="Chantiers" />
+          <ListItemText primary="Menu" />
           {open ? <ExpandLess /> : <ExpandMore />}
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
-            <StyledLink to="/app/fonctionnalite1">
-              <ListItem button style={{ paddingLeft: 32 }}>
-                <ListItemText primary="Chantiers ParisS" />
-              </ListItem>
-            </StyledLink>
-            <StyledLink to="/app/fonctionnalite2">
-              <ListItem button style={{ paddingLeft: 32 }}>
-                <ListItemText primary="Chantiers Ballot" />
-              </ListItem>
-            </StyledLink>
-            <StyledLink to="/app/fonctionnalite3">
-              <ListItem button style={{ paddingLeft: 32 }}>
-                <ListItemText primary="Chantiers Ivry" />
-              </ListItem>
-            </StyledLink>
+            <ListItem button>
+              <ListItemIcon>
+                <DashboardOutlined />
+              </ListItemIcon>
+              <ListItemText primary="Dashboard" />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <BuildOutlined />
+              </ListItemIcon>
+              <ListItemText primary="Chantiers" />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <FolderOutlined />
+              </ListItemIcon>
+              <ListItemText primary="Médiathèque" />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <ChatOutlined />
+              </ListItemIcon>
+              <ListItemText primary="Chat" />
+            </ListItem>
+            <ListItem button>
+              <ListItemIcon>
+                <SettingsOutlined />
+              </ListItemIcon>
+              <ListItemText primary="Réglages" />
+            </ListItem>
           </List>
         </Collapse>
-        <StyledLink to="/app/chat">
-          <ListItem button>
-            <ListItemIcon>
-              <Chat />
-            </ListItemIcon>
-            <ListItemText primary="Chat" />
-          </ListItem>
-        </StyledLink>
-        <StyledLink to="/app/settings">
-          <ListItem button>
-            <ListItemIcon>
-              <Settings />
-            </ListItemIcon>
-            <ListItemText primary="Réglages" />
-          </ListItem>
-        </StyledLink>
+        <Divider />
+        <ListItem button onClick={handleSharedClick}>
+          <ListItemText primary="Fichiers partagés" />
+          {sharedOpen ? <ExpandLess /> : <ExpandMore />}
+        </ListItem>
+        <Collapse in={sharedOpen} timeout="auto" unmountOnExit>
+          <List component="div" disablePadding>
+            <ListItem button>
+              <ListItemText primary="Chantiers ParisS" />
+            </ListItem>
+            <ListItem button>
+              <ListItemText primary="Chantiers Ballot" />
+            </ListItem>
+            <ListItem button>
+              <ListItemText primary="Chantiers Ivry" />
+            </ListItem>
+          </List>
+        </Collapse>
       </List>
     </div>
   );
 };
 
 export default Menu;
+
