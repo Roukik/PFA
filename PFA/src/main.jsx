@@ -19,12 +19,9 @@ const App = () => (
       <Route path="fonctionnalite2" element={<Fonctionnalite2 />} />
       <Route path="fonctionnalite3" element={<Fonctionnalite3 />} />
       <Route path="/app" element={<Layout />}>
-<<<<<<< HEAD
         <Route path="maincontent" element={<MainContent />} />
         <Route path="meschantiercc" element={<MesChantierCC/>} />
-=======
 
->>>>>>> 4d6960a05d830bd9387d883052b19a514925c526
       </Route>
     </Routes>
   </BrowserRouter>
