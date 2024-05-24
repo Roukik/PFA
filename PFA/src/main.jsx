@@ -20,7 +20,6 @@ const App = () => (
       <Route path="fonctionnalite3" element={<Fonctionnalite3 />} />
       <Route path="meschantiercc" element={<MesChantierCC/>} />
       <Route path="/app" element={<Layout />}>
-        <Route path="maincontent" element={<MainContent />} />
 
       </Route>
     </Routes>
