@@ -7,6 +7,7 @@ import Fonctionnalite1 from '../PagesCommunes/Fonctionnalite1';
 import Fonctionnalite2 from '../PagesCommunes/Fonctionnalite2';
 import Fonctionnalite3 from '../PagesCommunes/Fonctionnalite3';
 import Layout from '../PagesCommunes/layouts/Layout'; 
+import HomePageCC from '../ChefChantier/Pages/HomePageCC'; 
 import MesChantierCC from '../ChefChantier/Pages/MesChantierCC'; 
 
 
@@ -18,7 +19,9 @@ const App = () => (
       <Route path="/fonctionnalite1" element={<Fonctionnalite1 />} />
       <Route path="/fonctionnalite2" element={<Fonctionnalite2 />} />
       <Route path="/fonctionnalite3" element={<Fonctionnalite3 />} />
-      <Route path="/app" element={<Layout />}>
+      <Route path="/" element={<Layout />}></Route>
+        <Route path="/" element={<Layout />}>
+        <Route path="HomePageCC" element={<HomePageCC />} />
         <Route path="MesChantierCC" element={<MesChantierCC />} />
       </Route>
     </Routes>
