@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, Button, Grid, Card, CardContent, CardActions, TextField, CardMedia } from '@mui/material';
 import { styled } from '@mui/system';
+import Imagebat2 from '../../PagesCommunes/ImagePC/imagebat2.png';
 
 const Content = styled('div')({
   padding: 20,
@@ -23,7 +24,7 @@ const HomePageCC = () => {
         Bienvenue, <span style={{ color: '#5a5dff' }}>Alexandre Brown ! (le plaquiste)</span>
       </WelcomeText>
       <WelcomeText variant="body1">
-        Dans cette application vous retrouverai...
+        Dans cette application vous retrouverez...
       </WelcomeText>
       <Typography variant="h5" style={{ marginBottom: 20 }}>
         Vos fichiers
@@ -41,10 +42,10 @@ const HomePageCC = () => {
         {[1, 2, 3].map((item, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <StyledCard>
-            <CardMedia
-              sx={{ height: 140 }}
-              image="/static/images/cards/contemplative-reptile.jpg"
-              title="green iguana"
+              <CardMedia
+                sx={{ height: 140 }}
+                image={Imagebat2}
+                title="Chantiers récemment ajoutés"
               />
               <CardContent>
                 <Typography variant="h6">Chantiers x</Typography>
@@ -66,7 +67,7 @@ const HomePageCC = () => {
             <StyledCard>
               <CardContent>
                 <Typography variant="h6">Nouveau chantier</Typography>
-                <Typography variant="body2">Créez le nouvel espace de votre futur chantiers</Typography>
+                <Typography variant="body2">Créez le nouvel espace de votre futur chantier</Typography>
               </CardContent>
               <CardActions>
                 <Button size="small" variant="contained" color="primary">
