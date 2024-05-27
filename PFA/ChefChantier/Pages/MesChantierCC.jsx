@@ -6,7 +6,7 @@ import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { TextField, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
-import Fleche from '../imgChefChantier/Fleche.png';
+{/*import Fleche from '../imgChefChantier/Fleche.png';*/}
 import '../styles/MesChantierCC.css';
 import ImgChantier from '../imgChefChantier/imgChantier.png';
 import Collab from '../imgChefChantier/Collaborateurs.png'
