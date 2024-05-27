@@ -1,7 +1,8 @@
 import React from 'react';
-import { Typography, Button, Grid, Card, CardContent, CardActions, TextField, CardMedia } from '@mui/material';
+import { Typography, Button, Grid, Card, CardContent, CardActions, TextField, CardMedia, IconButton, Box } from '@mui/material';
 import { styled } from '@mui/system';
 import Imagebat2 from '../../PagesCommunes/ImagePC/imagebat2.png';
+import AccountCircle from '@mui/icons-material/AccountCircle';
 
 const Content = styled('div')({
   padding: 20,
@@ -19,12 +20,25 @@ const StyledCard = styled(Card)({
 const HomePageCC = () => {
   return (
     <Content>
+<<<<<<< HEAD
       <TextField fullWidth variant="outlined" placeholder="Recherche" style={{ marginBottom: 20 }} className='SearchBar' />
+=======
+      <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 5, marginTop: 5 }}>
+        <TextField 
+          variant="outlined" 
+          placeholder="Recherche" 
+          sx={{ width: '45%' }} 
+        />
+        <IconButton color="inherit" sx={{ marginLeft: 'auto' }}>
+          <AccountCircle sx={{ fontSize: 60 }} />
+        </IconButton>
+      </Box>
+>>>>>>> ca97678684cb8e4a5844f141045743da58fb9052
       <WelcomeText variant="h4">
         Bienvenue, <span style={{ color: '#5a5dff' }}>Alexandre Brown ! (le plaquiste)</span>
       </WelcomeText>
       <WelcomeText variant="body1">
-        Dans cette application vous retrouverez...
+        Dans cette application, vous retrouverez...
       </WelcomeText>
       <Typography variant="h5" style={{ marginBottom: 20 }}>
         Vos fichiers
@@ -52,7 +66,7 @@ const HomePageCC = () => {
                 <Typography variant="body2">Lorem ipsum lorem</Typography>
               </CardContent>
               <CardActions>
-                <Button size="small">Details</Button>
+                <Button size="small">Détails</Button>
               </CardActions>
             </StyledCard>
           </Grid>
@@ -83,3 +97,5 @@ const HomePageCC = () => {
 };
 
 export default HomePageCC;
+
+

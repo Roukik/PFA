@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { List, ListItem, ListItemIcon, ListItemText, Collapse, Divider } from '@mui/material';
+import { List, ListItem, ListItemIcon, ListItemText, Collapse, Divider, Avatar } from '@mui/material';
 import {
   DashboardOutlined,
   BuildOutlined,
@@ -11,7 +11,7 @@ import {
   Menu as MenuIcon
 } from '@mui/icons-material';
 import { AppBar, Box, Toolbar, IconButton, Typography } from '@mui/material';
-
+import Imagebat2 from '../PagesCommunes/ImagePC/imagebat2.png';
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -45,7 +45,6 @@ const Menu = () => {
             >
               <MenuIcon />
             </IconButton>
-
           </Toolbar>
         </AppBar>
         {menuOpen && (
@@ -97,12 +96,21 @@ const Menu = () => {
               <Collapse in={sharedOpen} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                   <ListItem button>
+                    <ListItemIcon>
+                      <Avatar src={Imagebat2} alt="Chantiers ParisS" />
+                    </ListItemIcon>
                     <ListItemText primary="Chantiers ParisS" />
                   </ListItem>
                   <ListItem button>
+                    <ListItemIcon>
+                      <Avatar src={Imagebat2} alt="Chantiers Ballot" />
+                    </ListItemIcon>
                     <ListItemText primary="Chantiers Ballot" />
                   </ListItem>
                   <ListItem button>
+                    <ListItemIcon>
+                      <Avatar src={Imagebat2} alt="Chantiers Ivry" />
+                    </ListItemIcon>
                     <ListItemText primary="Chantiers Ivry" />
                   </ListItem>
                 </List>
@@ -116,6 +124,4 @@ const Menu = () => {
 };
 
 export default Menu;
-
-
 
