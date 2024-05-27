@@ -21,9 +21,6 @@ const StyledCard = styled(Card)({
 const HomePageCC = () => {
   return (
     <Content>
-<<<<<<< HEAD
-      <TextField fullWidth variant="outlined" placeholder="Recherche" style={{ marginBottom: 20 }} className='SearchBar' />
-=======
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 5, marginTop: 5 }}>
         <TextField 
           variant="outlined" 
@@ -34,7 +31,6 @@ const HomePageCC = () => {
           <AccountCircle sx={{ fontSize: 60 }} />
         </IconButton>
       </Box>
->>>>>>> ca97678684cb8e4a5844f141045743da58fb9052
       <WelcomeText variant="h4">
         Bienvenue, <span style={{ color: '#5a5dff' }}>Alexandre Brown ! (le plaquiste)</span>
       </WelcomeText>
