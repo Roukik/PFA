@@ -3,6 +3,7 @@ import { Typography, Button, Grid, Card, CardContent, CardActions, TextField, Ca
 import { styled } from '@mui/system';
 import Imagebat2 from '../../PagesCommunes/ImagePC/imagebat2.png';
 import AccountCircle from '@mui/icons-material/AccountCircle';
+import FolderIcon from '@mui/icons-material/Folder';
 
 const Content = styled('div')({
   padding: 20,
@@ -10,11 +11,11 @@ const Content = styled('div')({
 });
 
 const WelcomeText = styled(Typography)({
-  marginBottom: 20,
+  marginBottom: 40,
 });
 
 const StyledCard = styled(Card)({
-  marginBottom: 20,
+  marginBottom: 70,
 });
 
 const HomePageCC = () => {
@@ -25,7 +26,7 @@ const HomePageCC = () => {
         <TextField 
           variant="outlined" 
           placeholder="Recherche" 
-          sx={{ width: '45%' }} 
+          sx={{ width: '70%' }} 
         />
         <IconButton color="inherit" sx={{ marginLeft: 'auto' }}>
           <AccountCircle sx={{ fontSize: 60 }} />
@@ -37,13 +38,23 @@ const HomePageCC = () => {
       <WelcomeText variant="body1">
         Dans cette application, vous retrouverez...
       </WelcomeText>
-      <Typography variant="h5" style={{ marginBottom: 20 }}>
+      <Typography variant="h5" style={{ marginBottom: 20 , }}>
         Vos fichiers
       </Typography>
-      <Button variant="contained" color="primary" style={{ marginRight: 10 }}>
+      <Button 
+        variant="contained" 
+        color="primary" 
+        style={{ marginRight: 10, marginBottom: 20, width:'35%', height:'6%',    sx: {fontSize: '25.0rem' }}}
+        startIcon={<FolderIcon />}
+      >
         Chantiers ParisS
       </Button>
-      <Button variant="contained" color="primary" style={{ marginRight: 10 }}>
+      <Button 
+        variant="contained" 
+        color="primary" 
+        style={{ marginRight: 10, marginBottom: 20, width:'35%', height:'6%'}}
+        startIcon={<FolderIcon />}
+      >
         Chantiers Ivry
       </Button>
       <Typography variant="h5" style={{ marginBottom: 20 }}>
@@ -76,6 +87,11 @@ const HomePageCC = () => {
         {[1, 2, 3].map((item, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <StyledCard>
+            <CardMedia
+                sx={{ height: 140 }}
+                image={Imagebat2}
+                title="Chantiers récemment ajoutés"
+              />
               <CardContent>
                 <Typography variant="h6">Nouveau chantier</Typography>
                 <Typography variant="body2">Créez le nouvel espace de votre futur chantier</Typography>

@@ -10,6 +10,8 @@ import Layout from '../PagesCommunes/layouts/Layout';
 import HomePageCC from '../ChefChantier/Pages/HomePageCC'; 
 import MesChantierCC from '../ChefChantier/Pages/MesChantierCC'; 
 import ParisS from '../ChefChantier/Pages/ParisS';
+import FormulaireCC from '../ChefChantier/Pages/FormulaireCC';
+import FormulaireCC2 from '../ChefChantier/Pages/FormulaireCC2';
 
 
 const App = () => (
@@ -20,6 +22,8 @@ const App = () => (
       <Route path="/fonctionnalite1" element={<Fonctionnalite1 />} />
       <Route path="/fonctionnalite2" element={<Fonctionnalite2 />} />
       <Route path="/fonctionnalite3" element={<Fonctionnalite3 />} />
+      <Route path="/formulaireCC" element={<FormulaireCC />} />
+      <Route path="/formulaireCC2" element={<FormulaireCC2 />} />
       <Route path="/" element={<Layout />}></Route>
         <Route path="/" element={<Layout />}>
         <Route path="HomePageCC" element={<HomePageCC />} />
