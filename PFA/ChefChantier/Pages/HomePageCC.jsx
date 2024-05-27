@@ -21,6 +21,7 @@ const StyledCard = styled(Card)({
 const HomePageCC = () => {
   return (
     <Content>
+      <TextField fullWidth variant="outlined" placeholder="Recherche" style={{ marginBottom: 20 }} className='SearchBar' />
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 5, marginTop: 5 }}>
         <TextField 
           variant="outlined" 
