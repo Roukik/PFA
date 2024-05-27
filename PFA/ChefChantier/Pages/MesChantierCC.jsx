@@ -2,11 +2,15 @@ import * as React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { TextField, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import Fleche from '../imgChefChantier/Fleche.png';
+import '../styles/MesChantierCC.css';
+import ImgChantier from '../imgChefChantier/imgChantier.png';
+import Collab from '../imgChefChantier/Collaborateurs.png'
+import {Link} from 'react-router-dom'
 
 function MesChantierCC() {
   // État pour le sélecteur
@@ -49,7 +53,7 @@ function MesChantierCC() {
           key={index}
           sx={{ 
             width: '200%', 
-            maxWidth: 760, 
+            maxWidth: 620, 
             bgcolor: 'background.paper', 
             borderRadius: '20px', 
             border: '1px solid grey', 
@@ -57,11 +61,13 @@ function MesChantierCC() {
           }}
         >
           <ListItem alignItems="flex-start">
-            <ListItemAvatar>
-              <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-            </ListItemAvatar>
+            <img src={ImgChantier} alt="" className='imgChantier' />
             <ListItemText
-              primary="Chantier Paris Sud"
+              primary={
+                <Typography sx={{ marginLeft: 2, fontSize: '28px', fontWeight: 'bold' }}>
+                  Chantier Paris Sud
+                </Typography>
+              }
               secondary={
                 <React.Fragment>
                   <Typography
@@ -71,14 +77,17 @@ function MesChantierCC() {
                     color="text.primary"
                   >
                   </Typography>
-                  <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
-                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                    <Typography sx={{ ml: 1 }}>12 membres</Typography>
-                  </Box>
-                  <Box>
-                    
+                  <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mt: 2 }}>
+                    <Box sx={{ display: 'flex', alignItems: 'center', marginLeft: 3 }}>
+                      <img src={Collab} alt="" className='CollabImg' />
+                      <Typography sx={{ ml: 1 }}>12 membres</Typography>
+                    </Box>
+                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                      <Typography>Depuis le 18 juin</Typography>
+                      <Link to="/ParisS"  >
+                        <img src={Fleche} alt="" className='btnFleche' />
+                      </Link>
+                    </Box>
                   </Box>
                 </React.Fragment>
               }

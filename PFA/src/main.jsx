@@ -9,6 +9,7 @@ import Fonctionnalite3 from '../PagesCommunes/Fonctionnalite3';
 import Layout from '../PagesCommunes/layouts/Layout'; 
 import HomePageCC from '../ChefChantier/Pages/HomePageCC'; 
 import MesChantierCC from '../ChefChantier/Pages/MesChantierCC'; 
+import ParisS from '../ChefChantier/Pages/ParisS';
 
 
 const App = () => (
@@ -23,7 +24,9 @@ const App = () => (
         <Route path="/" element={<Layout />}>
         <Route path="HomePageCC" element={<HomePageCC />} />
         <Route path="MesChantierCC" element={<MesChantierCC />} />
+        <Route path='/ParisS' element={<ParisS/>} />
       </Route>
+      
     </Routes>
   </BrowserRouter>
 );
