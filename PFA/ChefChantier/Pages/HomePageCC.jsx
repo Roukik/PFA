@@ -19,7 +19,7 @@ const StyledCard = styled(Card)({
 const HomePageCC = () => {
   return (
     <Content>
-      <TextField fullWidth variant="outlined" placeholder="Recherche" style={{ marginBottom: 20 }} />
+      <TextField fullWidth variant="outlined" placeholder="Recherche" style={{ marginBottom: 20 }} className='SearchBar' />
       <WelcomeText variant="h4">
         Bienvenue, <span style={{ color: '#5a5dff' }}>Alexandre Brown ! (le plaquiste)</span>
       </WelcomeText>
