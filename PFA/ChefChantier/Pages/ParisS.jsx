@@ -96,12 +96,14 @@ function ParisS() {
                 <img src={Devis} alt="Devis" className='Devis' style={{ width: '30%', margin: '0 10px', marginTop: 35 }}/>
               </Box>
         </Box>
-        <Box>
-            <Typography>Médiathèque</Typography>
+        <Box sx={{ marginTop: 8 }} >
+            <Typography sx={{ color: '#5652AC', marginBottom: 1, fontSize: 30,  }} >Médiathèque</Typography>
             <Box>
                 <img src={Docs} alt="" className='Docs' />
-                <img src={Plans} alt="" className='Plans'/>
-                <img src={Photo} alt="" className='Photo' />
+            </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 5 }} >
+            <img src={Plans} alt="" className='Plans'/>
+            <img src={Photo} alt="" className='Photo' />
             </Box>
         </Box>
 
