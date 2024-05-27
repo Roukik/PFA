@@ -288,7 +288,7 @@ const FormulaireCC2 = () => {
         ))}
       </Stepper>
       {activeStep === steps.length && (
-        <Paper square elevation={0} sx={{ p: 3 }}>
+        <Paper square elevation={0} sx={{ p: 1 }}>
           <Typography>Toutes les étapes sont terminées - vous avez fini</Typography>
           <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
             Réinitialiser
