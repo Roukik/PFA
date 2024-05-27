@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { List, ListItem, ListItemIcon, ListItemText, Collapse, Divider } from '@mui/material';
+import { AppBar, Box, Toolbar, IconButton } from '@mui/material';
+{/*import ChantiersParisS from '../PagesCommunes/ImagePC/ChantierParisS.png';
+import ChantiersBallot from '../PagesCommunes/ImagePC/ChantierBallot.png';
+import ChantiersIvry from '../PagesCommunes/ImagePC/ChantierIvry.png';*/}
+import { List, ListItem, ListItemIcon, ListItemText, Collapse, Divider, Avatar } from '@mui/material';
 import {
   DashboardOutlined,
   BuildOutlined,
@@ -10,7 +14,6 @@ import {
   ExpandMore,
   Menu as MenuIcon
 } from '@mui/icons-material';
-import { AppBar, Box, Toolbar, IconButton, Typography } from '@mui/material';
 
 
 const Menu = () => {
@@ -45,7 +48,6 @@ const Menu = () => {
             >
               <MenuIcon />
             </IconButton>
-
           </Toolbar>
         </AppBar>
         {menuOpen && (
@@ -97,12 +99,21 @@ const Menu = () => {
               <Collapse in={sharedOpen} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                   <ListItem button>
+                    <ListItemIcon>
+                      <Avatar src={ChantiersParisS} />
+                    </ListItemIcon>
                     <ListItemText primary="Chantiers ParisS" />
                   </ListItem>
                   <ListItem button>
+                    <ListItemIcon>
+                      <Avatar src={ChantiersBallot} />
+                    </ListItemIcon>
                     <ListItemText primary="Chantiers Ballot" />
                   </ListItem>
                   <ListItem button>
+                    <ListItemIcon>
+                      <Avatar src={ChantiersIvry} />
+                    </ListItemIcon>
                     <ListItemText primary="Chantiers Ivry" />
                   </ListItem>
                 </List>
@@ -116,6 +127,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
-
-
