@@ -16,8 +16,9 @@ function Fonctionnalite3() {
           <div className='contenu'>
           <h1>Plan 2D </h1>
           <p>Décryptez et analysez efficacement les composants ainsi que la disposition de chaque pièce et élément à l’aide de notre plan 2D.</p>
-      
+          <Link to='/HomePageCC' >
           <button className='btnStart'>Commencer</button>
+          </Link>
         
           </div>
 
