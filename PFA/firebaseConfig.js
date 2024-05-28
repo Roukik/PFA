@@ -1,17 +1,23 @@
 // firebaseConfig.js
 import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
+
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyA0QuJuCyI2CwYfWy-i7QcVSAdcYoZyEpc",
+  authDomain: "login-pfa.firebaseapp.com",
+  projectId: "login-pfa",
+  storageBucket: "login-pfa.appspot.com",
+  messagingSenderId: "19481942966",
+  appId: "1:19481942966:web:b848a17c2d5f5057283f17"
 };
 
+
 const app = initializeApp(firebaseConfig);
+
+
+const auth = getAuth(app);
 const db = getFirestore(app);
 
-export { db };
+export { auth, db };
