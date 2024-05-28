@@ -12,6 +12,7 @@ import {
 } from '@mui/icons-material';
 import { AppBar, Box, Toolbar, IconButton, Typography } from '@mui/material';
 import Imagebat2 from '../PagesCommunes/ImagePC/imagebat2.png';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -66,7 +67,9 @@ const Menu = () => {
                     <ListItemIcon>
                       <BuildOutlined />
                     </ListItemIcon>
+                    <Link to="/MesChantierCC" >
                     <ListItemText primary="Chantiers" />
+                    </Link>
                   </ListItem>
                   <ListItem button>
                     <ListItemIcon>
