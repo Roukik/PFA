@@ -4,6 +4,7 @@ import { styled } from '@mui/system';
 import Imagebat2 from '../../PagesCommunes/ImagePC/imagebat2.png';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import FolderIcon from '@mui/icons-material/Folder';
+import { Link } from 'react-router-dom';
 
 const Content = styled('div')({
   padding: 20,
@@ -97,9 +98,11 @@ const HomePageCC = () => {
                 <Typography variant="body2">Créez le nouvel espace de votre futur chantier</Typography>
               </CardContent>
               <CardActions>
+              <Link to='/Formulairecc' >
                 <Button size="small" variant="contained" color="primary">
                   +
                 </Button>
+              </Link>
               </CardActions>
             </StyledCard>
           </Grid>
