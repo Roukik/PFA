@@ -33,7 +33,6 @@ function ParisS() {
               filtres
             </Button>
           </Box>
-
             <Box sx={{ marginTop: 2 }} >
                 <Typography sx={{ color: '#5652AC', marginBottom: 1, fontSize: 30,  }}>Récemment ajoutés</Typography>
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
@@ -54,8 +53,13 @@ function ParisS() {
             <Link to='/Fiches' >
                 <img src= {Fiches} alt="" className='Fiches' />
             </Link>
+            <Link to='/Factures' >
             <img src={Factures} alt="" className='Factures' />
+            </Link>
+            <Link to='/Contrats'>
             <img src={Contrats} alt="" className='Contrats' />
+            </Link>
+        
           </Box>
 
           <Button variant="outlined" sx={{ textTransform: 'none', marginTop: 2 }}>

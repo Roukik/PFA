@@ -14,7 +14,8 @@ import FormulaireCC from '../ChefChantier/Pages/FormulaireCC';
 import FormulaireCC2 from '../ChefChantier/Pages/FormulaireCC2';
 import Documents from '../ChefChantier/Pages/Documents';
 import Fiches from '../ChefChantier/Pages/Fiches';
-
+import Factures from '../ChefChantier/Pages/Factures';
+import Contrats from '../ChefChantier/Pages/Contrats'
 
 
 const App = () => (
@@ -29,6 +30,8 @@ const App = () => (
       <Route path="/formulaireCC2" element={<FormulaireCC2 />} />
       <Route path="/Documents" element={<Documents/>} />
       <Route path="/Fiches" element={<Fiches/>} />
+      <Route path="/Factures" element={<Factures/>} />
+      <Route path="/Contrats" element={<Contrats/>} />
       <Route path="/" element={<Layout />}></Route>
         <Route path="/" element={<Layout />}>
         <Route path="HomePageCC" element={<HomePageCC />} />
