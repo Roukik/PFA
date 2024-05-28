@@ -12,7 +12,7 @@ import MesChantierCC from '../ChefChantier/Pages/MesChantierCC';
 import ParisS from '../ChefChantier/Pages/ParisS';
 import FormulaireCC from '../ChefChantier/Pages/FormulaireCC';
 import FormulaireCC2 from '../ChefChantier/Pages/FormulaireCC2';
-
+import Documents from '../ChefChantier/Pages/Documents';
 
 const App = () => (
   <BrowserRouter>
@@ -24,13 +24,13 @@ const App = () => (
       <Route path="/fonctionnalite3" element={<Fonctionnalite3 />} />
       <Route path="/formulaireCC" element={<FormulaireCC />} />
       <Route path="/formulaireCC2" element={<FormulaireCC2 />} />
+      <Route path="/Documents" element={<Documents/>} />
       <Route path="/" element={<Layout />}></Route>
         <Route path="/" element={<Layout />}>
         <Route path="HomePageCC" element={<HomePageCC />} />
         <Route path="MesChantierCC" element={<MesChantierCC />} />
         <Route path='/ParisS' element={<ParisS/>} />
       </Route>
-      
     </Routes>
   </BrowserRouter>
 );

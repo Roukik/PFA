@@ -17,6 +17,7 @@ import Devis from '../imgChefChantier/Devis.png'
 import Docs from '../imgChefChantier/Docs.png'
 import Plans from '../imgChefChantier/Plans.png'
 import Photo from '../imgChefChantier/Photo.png'
+import {Link} from 'react-router-dom';
 
 
 function ParisS() {
@@ -99,7 +100,9 @@ function ParisS() {
         <Box sx={{ marginTop: 8 }} >
             <Typography sx={{ color: '#5652AC', marginBottom: 1, fontSize: 30,  }} >Médiathèque</Typography>
             <Box>
-                <img src={Docs} alt="" className='Docs' />
+                <Link to="/Documents">
+                  <img src={Docs} alt="" className='Docs' />
+                </Link>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 5 }} >
             <img src={Plans} alt="" className='Plans'/>
