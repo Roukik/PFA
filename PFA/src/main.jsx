@@ -14,6 +14,7 @@ import FormulaireCC from '../ChefChantier/Pages/FormulaireCC';
 import FormulaireCC2 from '../ChefChantier/Pages/FormulaireCC2';
 import Documents from '../ChefChantier/Pages/Documents';
 import Fiches from '../ChefChantier/Pages/Fiches';
+import MesChantierCC from '../ChefChantier/Pages/MesChantierCC';
 
 
 const App = () => (
