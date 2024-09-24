@@ -18,6 +18,7 @@ import {
   Paper
 } from '@mui/material';
 import { styled } from '@mui/system';
+import db from '../../firebaseConfig';
 
 const Content = styled('div')({
   padding: 20,
@@ -302,6 +303,7 @@ const FormulaireCC2 = () => {
       </Box>
       <Box mt={2}>
         <Button variant="contained" color="primary">
+          const db = getFirestore(app);
           Enregistrer
         </Button>
       </Box>

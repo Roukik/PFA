@@ -34,7 +34,7 @@ const HomePageCC = () => {
         </IconButton>
       </Box>
       <WelcomeText variant="h4">
-        Bienvenue, <span style={{ color: '#5a5dff' }}>Alexandre Brown ! (le plaquiste)</span>
+        Bienvenue, <span style={{ color: '#5a5dff' }}> Maria Da Cruz</span>
       </WelcomeText>
       <WelcomeText variant="body1">
         Dans cette application, vous retrouverez...
